@@ -1,0 +1,19 @@
+input{margin-left: 10px;}
+ul{
+	padding: 3px 2px;
+	border: 1px solid rgba(0,0,0,.125);}
+li{
+	list-style: none;
+}
+li:first-child{font-weight: bold;}
+.enter_keywords{width: 180px;}
+
+
+
+.confirm_add{
+	width: 80px;
+	right: 65px;
+}
+.cancel{
+	width: 53px;
+}

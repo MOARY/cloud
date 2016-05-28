@@ -1,0 +1,887 @@
+﻿.container {
+    margin: 5px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+
+/* table */
+
+.table {
+   width: 100%;
+   max-width: 100%;
+   border : 1px solid grey;
+   margin-bottom: 22px;
+   text-align: center;
+}
+
+thead {
+    background-color : #e8f8ff;
+}
+
+.table  thead  th {
+    height: 46px;
+}
+
+.table td {
+    height: 30px;
+}
+
+.table-darker {
+    background-color: #e4e4e4;
+}
+
+.table tbody {
+    border: 1px solid grey;
+}
+
+.table tbody td {
+    border: 1px solid grey;
+}
+
+
+.scrollable tbody {
+    display: block;
+    height: 400px;
+    overflow: auto;
+}
+
+.scrollable thead {
+    display: block;
+}
+
+.scrollable {
+    overflow: scroll;
+}
+
+.inline {
+    display: inline;
+}
+
+/* modal */
+.modal
+{
+	display:none;
+	background: #fff none repeat scroll 0% 0%;
+	opacity: 1;
+	list-style: none;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	z-index: 100;
+	position:fixed;
+	left:1%;
+	top:15%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 24px;
+
+}
+
+.modal-heading
+{
+    height: 36px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.modal-title
+{
+    color: #000000;
+    font-size: 16px;
+    margin-right: 5px;
+
+    /* height: 22px; */
+    font-weight: normal
+}
+
+.modal-icon
+{
+    width: 18px;
+    height: 18px;
+
+    float: right;
+
+}
+
+.modal-body {
+    margin-top: 16px;
+}
+/** button **/
+
+.button {
+    display: inline-block;
+    padding: 0 6px;
+    /* font-size: 14px; */
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    height: 25px;
+}
+
+.button-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.button-outline {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.button-submit {
+   	background-color: #17995A;
+	height: 25px;
+	border: solid 0px #DDDDDD;
+	color: #FFFFFF; 
+}
+
+.button-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #2e6da4;
+}
+
+.button-primary:disabled,
+.button-primary.is-disabled {
+  opacity: .5;
+  background-color: #cdcdb4;
+}
+
+.button-big {
+  height: 46px;
+font-size: 14px;
+}
+
+.button-big:disabled,
+.button-big.is-disabled {
+  opacity: .5;
+  background-color: grey;
+}
+
+.button-submit:disabled,
+.button-submit.is-disabled {
+  opacity: .5;
+  background-color: #cdcdb4;
+}
+
+.outline-blue {
+ 	background-color: #6495ED;
+	margin-top: 0px;
+
+    padding: 2px;
+	text-align:center;
+	color:#ffffff;
+
+}
+
+
+.grid-g {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yahoo/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+    /*font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif; */
+
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+
+    /* Prevents distributing space between rows */
+    -ms-align-content: flex-start;
+	-webkit-align-content: flex-start;
+	align-content: flex-start;
+
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.grid-g {
+    word-spacing: -0.43em;
+}
+
+.grid-u {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+
+.grid-g [class *= "grid-u"] {
+    font-family: sans-serif;
+}
+*/
+
+.grid-u-1,
+.grid-u-1-1,
+.grid-u-1-2,
+.grid-u-1-3,
+.grid-u-2-3,
+.grid-u-1-4,
+.grid-u-3-4,
+.grid-u-1-5,
+.grid-u-2-5,
+.grid-u-3-5,
+.grid-u-4-5,
+.grid-u-5-5,
+.grid-u-1-6,
+.grid-u-5-6,
+.grid-u-1-8,
+.grid-u-3-8,
+.grid-u-5-8,
+.grid-u-7-8,
+.grid-u-1-12,
+.grid-u-5-12,
+.grid-u-7-12,
+.grid-u-11-12,
+.grid-u-1-24,
+.grid-u-2-24,
+.grid-u-3-24,
+.grid-u-4-24,
+.grid-u-5-24,
+.grid-u-6-24,
+.grid-u-7-24,
+.grid-u-8-24,
+.grid-u-9-24,
+.grid-u-10-24,
+.grid-u-11-24,
+.grid-u-12-24,
+.grid-u-13-24,
+.grid-u-14-24,
+.grid-u-15-24,
+.grid-u-16-24,
+.grid-u-17-24,
+.grid-u-18-24,
+.grid-u-19-24,
+.grid-u-20-24,
+.grid-u-21-24,
+.grid-u-22-24,
+.grid-u-23-24,
+.grid-u-24-24 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.grid-u-1-24 {
+    width: 4.1667%;
+    *width: 4.1357%;
+}
+
+.grid-u-1-12,
+.grid-u-2-24 {
+    width: 8.3333%;
+    *width: 8.3023%;
+}
+
+.grid-u-1-8,
+.grid-u-3-24 {
+    width: 12.5000%;
+    *width: 12.4690%;
+}
+
+.grid-u-1-6,
+.grid-u-4-24 {
+    width: 16.6667%;
+    *width: 16.6357%;
+}
+
+.grid-u-1-5 {
+    width: 20%;
+    *width: 19.9690%;
+}
+
+.grid-u-5-24 {
+    width: 20.8333%;
+    *width: 20.8023%;
+}
+
+.grid-u-1-4,
+.grid-u-6-24 {
+    width: 25%;
+    *width: 24.9690%;
+}
+
+.grid-u-7-24 {
+    width: 29.1667%;
+    *width: 29.1357%;
+}
+
+.grid-u-1-3,
+.grid-u-8-24 {
+    width: 33.3333%;
+    *width: 33.3023%;
+}
+
+.grid-u-3-8,
+.grid-u-9-24 {
+    width: 37.5000%;
+    *width: 37.4690%;
+}
+
+.grid-u-2-5 {
+    width: 40%;
+    *width: 39.9690%;
+}
+
+.grid-u-5-12,
+.grid-u-10-24 {
+    width: 41.6667%;
+    *width: 41.6357%;
+}
+
+.grid-u-11-24 {
+    width: 45.8333%;
+    *width: 45.8023%;
+}
+
+.grid-u-1-2,
+.grid-u-12-24 {
+    width: 50%;
+    *width: 49.9690%;
+}
+
+.grid-u-13-24 {
+    width: 54.1667%;
+    *width: 54.1357%;
+}
+
+.grid-u-7-12,
+.grid-u-14-24 {
+    width: 58.3333%;
+    *width: 58.3023%;
+}
+
+.grid-u-3-5 {
+    width: 60%;
+    *width: 59.9690%;
+}
+
+.grid-u-5-8,
+.grid-u-15-24 {
+    width: 62.5000%;
+    *width: 62.4690%;
+}
+
+.grid-u-2-3,
+.grid-u-16-24 {
+    width: 66.6667%;
+    *width: 66.6357%;
+}
+
+.grid-u-17-24 {
+    width: 70.8333%;
+    *width: 70.8023%;
+}
+
+.grid-u-3-4,
+.grid-u-18-24 {
+    width: 75%;
+    *width: 74.9690%;
+}
+
+.grid-u-19-24 {
+    width: 79.1667%;
+    *width: 79.1357%;
+}
+
+.grid-u-4-5 {
+    width: 80%;
+    *width: 79.9690%;
+}
+
+.grid-u-5-6,
+.grid-u-20-24 {
+    width: 83.3333%;
+    *width: 83.3023%;
+}
+
+.grid-u-7-8,
+.grid-u-21-24 {
+    width: 87.5000%;
+    *width: 87.4690%;
+}
+
+.grid-u-11-12,
+.grid-u-22-24 {
+    width: 91.6667%;
+    *width: 91.6357%;
+}
+
+.grid-u-23-24 {
+    width: 95.8333%;
+    *width: 95.8023%;
+}
+
+.grid-u-1,
+.grid-u-1-1,
+.grid-u-5-5,
+.grid-u-24-24 {
+    width: 100%;
+}
+
+
+/** offset **/
+.grid-o-1-24 {
+    margin-left: 4.1667%;
+}
+
+.grid-o-1-12,
+.grid-o-2-24 {
+    margin-left: 8.3333%;
+}
+
+.grid-o-1-8,
+.grid-o-3-24 {
+    margin-left: 12.5000%;
+}
+
+.grid-o-1-6,
+.grid-o-4-24 {
+    margin-left: 16.6667%;
+}
+
+.grid-o-1-5 {
+    margin-left: 20%;
+}
+
+.grid-o-5-24 {
+    margin-left: 20.8333%;
+}
+
+.grid-o-1-4,
+.grid-o-6-24 {
+    margin-left: 25%;
+}
+
+.grid-o-7-24 {
+    margin-left: 29.1667%;
+}
+
+.grid-o-1-3,
+.grid-o-8-24 {
+    margin-left: 33.3333%;
+}
+
+.grid-o-3-8,
+.grid-o-9-24 {
+    margin-left: 37.5000%;
+}
+
+.grid-o-2-5 {
+    margin-left: 40%;
+}
+
+.grid-o-5-12,
+.grid-o-10-24 {
+    margin-left: 41.6667%;
+}
+
+.grid-o-11-24 {
+    margin-left: 45.8333%;
+}
+
+.grid-o-1-2,
+.grid-o-12-24 {
+    margin-left: 50%;
+}
+
+.grid-o-13-24 {
+    margin-left: 54.1667%;
+}
+
+.grid-o-7-12,
+.grid-o-14-24 {
+    margin-left: 58.3333%;
+}
+
+.grid-o-3-5 {
+    margin-left: 60%;
+}
+
+.grid-o-5-8,
+.grid-o-15-24 {
+    margin-left: 62.5000%;
+}
+
+.grid-o-2-3,
+.grid-o-16-24 {
+    margin-left: 66.6667%;
+}
+
+.grid-o-17-24 {
+    margin-left: 70.8333%;
+}
+
+.grid-o-3-4,
+.grid-o-18-24 {
+    margin-left: 75%;
+}
+
+.grid-o-19-24 {
+    margin-left: 79.1667%;
+}
+
+.grid-o-4-5 {
+    margin-left: 80%;
+}
+
+.grid-o-5-6,
+.grid-o-20-24 {
+    margin-left: 83.3333%;
+}
+
+.grid-o-7-8,
+.grid-o-21-24 {
+    margin-left: 87.5000%;
+}
+
+.grid-o-11-12,
+.grid-o-22-24 {
+    margin-left: 91.6667%;
+}
+
+.grid-o-23-24 {
+    margin-left: 95.8333%;
+}
+
+.grid-o-1,
+.grid-o-1-1,
+.grid-o-5-5,
+.grid-o-24-24 {
+    margin-left: 100%;
+}
+
+.overflow-hidden { overflow: hidden }
+.overflow-scroll { overflow: scroll }
+.overflow-auto   { overflow: auto }
+.overflow-x {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.overflow-y {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+.clearfix:after { clear: both }
+
+.left  { float: left }
+.right { float: right }
+
+.fit { max-width: 100% }
+
+.border-box { box-sizing: border-box }
+
+.align-baseline { vertical-align: baseline }
+.align-top      { vertical-align: top }
+.align-middle   { vertical-align: middle }
+.align-bottom   { vertical-align: bottom }
+
+.m0  { margin:        0 }
+.mt0 { margin-top:    0 }
+.mr0 { margin-right:  0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left:   0 }
+
+.m1  { margin: 6px }
+.mt1 { margin-top: 6px }
+.mr1 { margin-right: 6px }
+.mb1 { margin-bottom: 6px }
+.ml1 { margin-left: 6px }
+
+.m2  { margin: 12px }
+.mt2 { margin-top: 12px }
+.mr2 { margin-right: 12px }
+.mb2 { margin-bottom: 12px }
+.ml2 { margin-left: 12px }
+
+.m3  { margin: 24px }
+.mt3 { margin-top: 24px }
+.mr3 { margin-right: 24px }
+.mb3 { margin-bottom: 24px }
+.ml3 { margin-left: 24px }
+
+.m4  { margin: 48px }
+.mt4 { margin-top: 48px }
+.mr4 { margin-right: 48px }
+.mb4 { margin-bottom: 48px }
+.ml4 { margin-left: 48px }
+
+.mxn1 { margin-left: -6px; margin-right: -6px; }
+.mxn2 { margin-left: -12px; margin-right: -12px; }
+.mxn3 { margin-left: -24px; margin-right: -24px; }
+.mxn4 { margin-left: -48px; margin-right: -48px; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.p0 { padding: 0 }
+
+.p1  { padding: 6px }
+.py1 { padding-top: 6px; padding-bottom: 6px }
+.px1 { padding-left: 6px; padding-right: 6px }
+
+.p2  { padding: 12px }
+.py2 { padding-top: 12px; padding-bottom: 12px }
+.px2 { padding-left: 12px; padding-right: 12px }
+
+.p3  { padding: 24px }
+.py3 { padding-top: 24px; padding-bottom: 24px }
+.px3 { padding-left: 24px; padding-right: 24px }
+
+.p4  { padding: 48px }
+.py4 { padding-top: 48px; padding-bottom: 48px }
+.px4 { padding-left: 48px; padding-right: 48px }
+
+.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed }
+
+.top-0    { top: 0 }
+.right-0  { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0   { left: 0 }
+
+.z1 { z-index: 1 }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
+.z4 { z-index: 4 }
+
+
+.panel {
+    float:left;
+	background:#FFFFcc;
+	color:#000;
+	border:1px solid #999;
+    padding: 10px 12px;
+}
+
+.panel-info {
+	background:#FFFFcc;
+	color:#000;
+}
+
+
+.black  { color: #111 }
+.gray   { color: #aaa }
+.silver { color: #ddd }
+.white  { color: #fff }
+
+.aqua  { color: #7fdbff }
+.blue  { color: #0074d9 }
+.navy  { color: #001f3f }
+.teal  { color: #39cccc }
+.green { color: #2ecc40 }
+.olive { color: #3d9970 }
+.lime  { color: #01ff70 }
+
+.yellow  { color: #ffdc00 }
+.orange  { color: #ff851b }
+.red     { color: #ff4136 }
+.cred     { color: #ff4136 }
+.fuchsia { color: #f012be }
+.purple  { color: #b10dc9 }
+.maroon  { color: #85144b }
+
+.color-inherit { color: inherit }
+.muted { opacity: .5 }
+
+.bg-black  { background-color: #111 }
+.bg-gray   { background-color: #aaa }
+.bg-silver { background-color: #ddd }
+.bg-white  { background-color: #fff }
+
+.bg-aqua  { background-color: #7fdbff }
+.bg-blue  { background-color: #0074d9 }
+.bg-navy  { background-color: #001f3f }
+.bg-teal  { background-color: #39cccc }
+.bg-green { background-color: #2ecc40 }
+.bg-olive { background-color: #3d9970 }
+.bg-lime  { background-color: #01ff70 }
+
+.bg-yellow  { background-color: #ffdc00 }
+.bg-orange  { background-color: #ff851b }
+.bg-red     { background-color: #ff4136 }
+.bg-fuchsia { background-color: #f012be }
+.bg-purple  { background-color: #b10dc9 }
+.bg-maroon  { background-color: #85144b }
+
+.bg-darken-1 { background-color: rgba(0,0,0,.0625) }
+.bg-darken-2 { background-color: rgba(0,0,0,.125) }
+.bg-darken-3 { background-color: rgba(0,0,0,.25) }
+.bg-darken-4 { background-color: rgba(0,0,0,.5) }
+
+.bg-lighten-1 { background-color: rgba(255,255,255,.0625) }
+.bg-lighten-2 { background-color: rgba(255,255,255,.125) }
+.bg-lighten-3 { background-color: rgba(255,255,255,.25) }
+.bg-lighten-4 { background-color: rgba(255,255,255,.5) }
+
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.125);
+}
+
+.border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(0,0,0,.125);
+}
+
+.border-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgba(0,0,0,.125);
+}
+
+.border-blod-right {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: Black;
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0,0,0,.125);
+}
+
+.border-left {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: rgba(0,0,0,.125);
+}
+
+.border-none { border: 0 }
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+.inline       { display: inline }
+.block        { display: block }
+.inline-block { display: inline-block }
+.table        { display: table }
+.table-cell   { display: table-cell }
+
+.md-field {
+    width: 50px;
+    height: 24px;
+}
+
+.lg-field {
+    width: 100px;
+}
+
+.sm-field {
+    width: 30px;
+}
+
+ a.nolink:link
+{
+     color: #000;
+}
+a.nolink:visited
+{
+    color: #000;
+}
+a.nolink:hover
+{
+    color: #000;
+}
+a.nolink:active
+{
+    color: #000;
+}

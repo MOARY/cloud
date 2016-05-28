@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跟台订单管理</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/ApplyP_index.css">
+	<script src="../js/jquery-1.9.1.js"></script>
+	<script src="../js/jquery.collapse.js"></script>
+	<script src="ApplyP_index.js"></script>
+</head>
+<body>
+	<div class="ApplyP_name">
+		<div class="ApplyP">
+			<span class="left" id="icon">跟台</span>
+			<p class="left"><span>No.85423369</span>-手术室</p>
+			<p class="left">| 下单:<span>2015-03-19 18:34</span></p>
+			<p class="left">剩余时间:<span>1天</span></p>
+			<p class="left">| 总价:<span>$9630.00</span></p>
+			<p class="left">包数量:<span>3</span></p>
+			<p class="left">配货进度:<span>1/3</span></p>
+		</div>
+		<div id="isfold">
+			<a id="fold" href="javascript:void(0);"><img src="img/triangle-up.png" alt="fold">收起</a>
+			<a id="unfold" href="javascript:void(0);"><img src="img/triangle-down.png" alt="unfold">展开</a>
+		</div>
+		<div id="fold_content">
+			<table>
+				<tr>
+					<td>
+						<p>科室：<span>脊柱外科</span></p>
+					</td>
+					<td>
+						<p>病案号：<span>14181251</span></p>
+					</td>
+					<td>
+						<p>床号：<span>1134</span></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>性别：<span>男</span></p>
+					</td>
+					<td>
+						<p>疾病名称：<span>先天性畸形</span></p>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><p>手术名称：<span>椎管扩大减压术</span></p></td>
+				</tr>
+				<tr>
+					<td>
+						<p>手术日期：<span>2017-07-21</span></p>
+					</td>
+					<td>
+						<p>手术医生：<span>赵志军</span></p>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>
+						<p>附加手术：<span>椎管扩大减压术</span></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>备注：<span> </span></p>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+	</div>	
+	<div class="add_ApplyP">
+		<div class="aP_left">
+			<input type="button" id="add" class="left" value="+ 增加包">
+			<input type="button" id="complete" class="right" value="完成配货">
+		</div>
+		<div class="aP_right">
+			<input type="button"class="left menu" value="打印配送单">
+			<input type="button" class="left menu" value="物流">
+			<input type="button"class="left menu" value="确认配送">
+			<input type="button" class="left menu" value="撤回">
+		</div>
+	</div>
+	<div class="packages">
+		<div class="package">
+			<div class="p" id="default-example" data-collapse  style="padding:10px;">
+				<h3 id="title">
+					<img src="img/left.png" alt="" id="collapse_pic"><span>包1：</span><span id="name">美敦力枢法模中空螺丝钉：UCSS包</span>
+				</h3>
+				<div id="griddiv">contenthuidgfkjdfhgslkfgh</div>
+				<span class="state">待配货</span>
+		    </div>
+		    <div id="delet" class="oprate left">
+				<span class="border-right">删除包</span>
+				<span id="reset_name">改名</span>
+			</div>
+			<div id="barcode" class="oprate left">
+				<p class="inline">扫主条码定位：</p>
+				<input type="text" id="barcode_input">
+				<input type="checkbox" name="" id="disinfect"><label for="disinfect">需要消毒</label>
+				<input type="button" value=" + 增加包明细" class="add_infor">
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+
+</html>

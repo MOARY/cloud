@@ -1,0 +1,64 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	min-height: 768px;
+	min-width: 1024px;
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei" ,"微软雅黑",Arial,sans-serif;
+	padding: 15px 20px;
+	font-size: 13px;
+}
+input{
+	height: 27px;
+	vertical-align: middle;
+}
+li{color: #a6a6a6;}
+li:first-child{color: #000;}
+.command_name{
+	width: 185px;
+	margin-left: 0;
+}
+.search{
+	width: 53px;
+	margin: 1px 5px;
+	border: 1px solid #c6c6c6;
+	border-radius: 3px;
+	padding-top: 1px;
+}
+.content{padding-top: 18px;}
+.con_left{
+	width: 270px;
+	height: 500px;
+	border: 1px solid #d9d9d9;
+	float: left;
+	overflow-y:scroll;
+}
+.con_right{
+	position: relative;
+	margin-left: 10px;
+	float:left;
+	height: 500px;
+}
+.confirm_add{
+	position: absolute;
+	width: 80px;
+	height: 27px;
+	top: -40px;
+	right: 55px;
+	color: #fff;
+	background-color: #428bca;
+	border: 1px;
+	border-radius: 3px;
+}
+.cancel{
+	position: absolute;
+	width: 45px;
+	height: 27px;
+	top: -40px;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #c6c6c6;
+	border-radius: 3px;
+	padding:2px 5px;
+}
